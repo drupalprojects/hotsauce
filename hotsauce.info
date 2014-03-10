@@ -15,21 +15,21 @@ files[] = hotsauce.profile
 ; Dependencies
 ; ------------
 
-;
-; Core
-;
-
-; Add core dependencies here.
-
-;
-; Contrib
-;
-
-; Add contrib dependencies here.
-
-;
-; Panopoly Modules
-;
+; Drupal Core
+dependencies[] = menu
+dependencies[] = image
+dependencies[] = list
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = field
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = dblog
+dependencies[] = update
 
 ; Panopoly Foundation
 dependencies[] = panopoly_core
