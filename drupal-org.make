@@ -6,7 +6,7 @@ core = 7.x
 
 projects[kalatheme][type] = theme
 projects[kalatheme][download][type] = git
-projects[kalatheme][download][revision] = 3526e70
+projects[kalatheme][download][revision] = c058782
 projects[kalatheme][download][branch] = 7.x-3.x
 projects[kalatheme][download][url] = http://git.drupal.org/project/kalatheme.git
 
