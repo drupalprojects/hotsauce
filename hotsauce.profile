@@ -18,7 +18,7 @@ function hotsauce_install_tasks($install_state) {
 
   // @todo: Switch to Kalamuna App server
   require_once(drupal_get_path('module', 'apps') . '/apps.profile.inc');
-  $tasks = $tasks + apps_profile_install_tasks($install_state, array('machine name' => 'panopoly', 'default apps' => array('panopoly_demo')));
+  $tasks = $tasks + apps_profile_install_tasks($install_state, array('machine name' => 'hotapps', 'default apps' => array()));
 
   // Add subtheme generator to installation workflow
   $tasks['hotsauce_theme_configure_form'] = array(
@@ -70,6 +70,20 @@ function hotsauce_theme_configure_form_validate($form, &$form_state) {
   if (function_exists('kalatheme_setup_form_validate')) {
     kalatheme_setup_form_validate($form, $form_state);
   }
+}
+
+/**
+ * Implements hook_apps_servers_info()
+ */
+function hotsauce_apps_servers_info() {
+  //$info =  drupal_parse_info_file(drupal_get_path('profile', 'hotsauce') . '/hotsauce.info');
+  return array(
+    'hotapps' => array(
+      'title' => 'HotApps!',
+      'description' => 'First generation HotApps! for the people.',
+      'manifest' => 'http://apps.kalamuna.com/hotapps1',
+    ),
+  );
 }
 
 /**
