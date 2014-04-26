@@ -1,6 +1,6 @@
 ; Packaging information for Hot Sauce
-name = Hot Sauce
-distribution_name = "Hot Sauce"
+name = HotSauce!
+distribution_name = "HotSauce!"
 description = "This sauce is hot!"
 version = "7.x-1.x"
 core = "7.x"
