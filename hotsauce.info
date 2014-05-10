@@ -33,7 +33,7 @@ dependencies[] = update
 
 ; HotSauce! Foundation
 dependencies[] = hot_core
-dependencies[] = hot_images
+dependencies[] = hot_pics
 dependencies[] = hot_theme
 dependencies[] = hot_magic
 dependencies[] = hot_widgets
