@@ -10,40 +10,40 @@ projects[kalatheme][download][revision] = ee3f1e3
 projects[kalatheme][download][branch] = 7.x-3.x
 projects[kalatheme][download][url] = http://git.drupal.org/project/kalatheme.git
 
-; Panopoly
+; HotSauce! Inheritance
 
-; Someday maybe we can turn this on to just inherit Panopoly
-;projects[panopoly][type] = profile
-;projects[panopoly][version] = 7.x-1.2
+; Someday maybe we can turn this on to just inherit hot
+;projects[hot][type] = profile
+;projects[hot][version] = 7.x-1.0-alpha1
 ; but, Drupal.org does not support recursive profiles
 ; and also does not support include[]
-; so we need to copy the panopoly.make file here
+; so we need to copy the hot.make file here
 
-; The Panopoly Foundation
+; The HotSauce!
 
-projects[panopoly_core][version] = 1.2
-projects[panopoly_core][subdir] = panopoly
+projects[hot_core][version] = 1.0-alpha1
+projects[hot_core][subdir] = hotsauce
 
-; Other Panopoly Magix
+; Other HotSauce! Magix
 
-projects[panopoly_images][version] = 1.2
-projects[panopoly_images][subdir] = panopoly
-projects[panopoly_theme][version] = 1.2
-projects[panopoly_theme][subdir] = panopoly
-projects[panopoly_magic][version] = 1.2
-projects[panopoly_magic][subdir] = panopoly
-projects[panopoly_widgets][version] = 1.2
-projects[panopoly_widgets][subdir] = panopoly
-projects[panopoly_admin][version] = 1.2
-projects[panopoly_admin][subdir] = panopoly
-projects[panopoly_users][version] = 1.2
-projects[panopoly_users][subdir] = panopoly
+projects[hot_images][version] = 1.0-alpha1
+projects[hot_images][subdir] = hotsauce
+projects[hot_theme][version] = 1.0-alpha1
+projects[hot_theme][subdir] = hotsauce
+projects[hot_magic][version] = 1.0-alpha1
+projects[hot_magic][subdir] = hotsauce
+projects[hot_widgets][version] = 1.0-alpha1
+projects[hot_widgets][subdir] = hotsauce
+projects[hot_admin][version] = 1.0-alpha1
+projects[hot_admin][subdir] = hotsauce
+projects[hot_users][version] = 1.0-alpha1
+projects[hot_users][subdir] = hotsauce
 
-; The Panopoly Toolset
+; The HotSauce! Toolset
 
-projects[panopoly_pages][version] = 1.2
-projects[panopoly_pages][subdir] = panopoly
-projects[panopoly_wysiwyg][version] = 1.2
-projects[panopoly_wysiwyg][subdir] = panopoly
-projects[panopoly_search][version] = 1.2
-projects[panopoly_search][subdir] = panopoly
+projects[hot_pages][version] = 1.0-alpha1
+projects[hot_pages][subdir] = hotsauce
+projects[hot_wysiwyg][version] = 1.0-alpha1
+projects[hot_wysiwyg][subdir] = hotsauce
+projects[hot_search][version] = 1.0-alpha1
+projects[hot_search][subdir] = hotsauce

@@ -1,6 +1,6 @@
 #!/bin/sh
-# Script to rebuild the Panopoly installation profile
-# This command expects to be run within the Panopoly profile.
+# Script to rebuild the HotSauce! installation profile
+# This command expects to be run within the HotSauce! profile.
 # To use this command you must have `drush make` and `git` installed.
 
 if [ -f drupal-org.make ]; then

@@ -3,7 +3,7 @@
 ; Use this file to build a full distribution including Drupal
 ; core and the "Hot Sauce" distribution using the following command...
 ;
-; drush --no-patch-txt make build-hotsauce-pantheon-dev.make <target directory>
+; drush --no-patch-txt make build-hotsauce-dev.make <target directory>
 
 api = 2
 core = 7.x

@@ -11,7 +11,7 @@ INTRODUCTION
 Current Maintainers: Mike Pirog <mike@getpantheon.com>
 
 
-HotSauce! is powerful sub distrbution of Panopoly which aims to empower users
+HotSauce! is powerful sub distrbution of HotSauce! which aims to empower users
 with an intuitice content authoring interface, easy and out of the box
 theming options and an array of apps and plugins to select on installation.
 HotSauce is:

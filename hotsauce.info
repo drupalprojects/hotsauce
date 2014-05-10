@@ -6,7 +6,7 @@ version = "7.x-1.x"
 core = "7.x"
 exclusive = 1
 
-base[] = panopoly
+base[] = hotsauce
 
 files[] = hotsauce.install
 files[] = hotsauce.profile
@@ -31,21 +31,21 @@ dependencies[] = file
 dependencies[] = dblog
 dependencies[] = update
 
-; Panopoly Foundation
-dependencies[] = panopoly_core
-dependencies[] = panopoly_images
-dependencies[] = panopoly_theme
-dependencies[] = panopoly_magic
-dependencies[] = panopoly_widgets
-dependencies[] = panopoly_admin
-dependencies[] = panopoly_users
+; HotSauce! Foundation
+dependencies[] = hot_core
+dependencies[] = hot_images
+dependencies[] = hot_theme
+dependencies[] = hot_magic
+dependencies[] = hot_widgets
+dependencies[] = hot_admin
+dependencies[] = hot_users
 
-; Panopoly Toolset
-dependencies[] = panopoly_pages
-dependencies[] = panopoly_search
-dependencies[] = panopoly_wysiwyg
+; HotSauce! Toolset
+dependencies[] = hot_pages
+dependencies[] = hot_search
+dependencies[] = hot_wysiwyg
 
-; Panopoly Recommended - Admin & UI
+; HotSauce! Recommended - Admin & UI
 dependencies[] = backports
 dependencies[] = breakpoints
 dependencies[] = date_popup_authored
@@ -55,7 +55,7 @@ dependencies[] = save_draft
 dependencies[] = simplified_menu_admin
 dependencies[] = views_ui
 
-; Panopoly Recommended - Other
+; HotSauce! Recommended - Other
 dependencies[] = apps
 dependencies[] = defaultcontent
 dependencies[] = devel
