@@ -25,10 +25,10 @@ projects[hot_core][subdir] = hotsauce
 projects[hot_core][download][type] = git
 projects[hot_core][download][branch] = 7.x-1.x
 
-projects[hot_images][version] = 1.x-dev
-projects[hot_images][subdir] = hotsauce
-projects[hot_images][download][type] = git
-projects[hot_images][download][branch] = 7.x-1.x
+projects[hot_pics][version] = 1.x-dev
+projects[hot_pics][subdir] = hotsauce
+projects[hot_pics][download][type] = git
+projects[hot_pics][download][branch] = 7.x-1.x
 
 projects[hot_theme][version] = 1.x-dev
 projects[hot_theme][subdir] = hotsauce
