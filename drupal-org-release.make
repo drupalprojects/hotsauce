@@ -6,10 +6,9 @@ core = 7.x
 
 projects[kalatheme][type] = theme
 projects[kalatheme][download][type] = git
-projects[kalatheme][download][revision] = ee3f1e3
+projects[kalatheme][download][revision] = 86c1705
 projects[kalatheme][download][branch] = 7.x-3.x
 projects[kalatheme][download][url] = http://git.drupal.org/project/kalatheme.git
-
 
 ; HotSauce Inheritance !
 
