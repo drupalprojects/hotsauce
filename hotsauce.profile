@@ -39,20 +39,6 @@ function hotsauce_install_tasks_alter(&$tasks, $install_state) {
 }
 
 /**
- * Implements hook_apps_servers_info()
- */
-function hotsauce_apps_servers_info() {
-  //$info =  drupal_parse_info_file(drupal_get_path('profile', 'hotsauce') . '/hotsauce.info');
-  return array(
-    'hotapps' => array(
-      'title' => 'HotApps!',
-      'description' => 'First generation HotApps! for the people.',
-      'manifest' => 'http://apps.kalamuna.com/hotapps1',
-    ),
-  );
-}
-
-/**
  * Form to configure the Kalatheme
  */
 function hotsauce_theme_configure_form($form, &$form_state) {
