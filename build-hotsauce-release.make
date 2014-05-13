@@ -11,7 +11,6 @@ core = 7.x
 ; Drupal
 
 includes[] = drupal-org-core.make
-includes[] = drupal-org-release.make
 
 ; HotSauce
 

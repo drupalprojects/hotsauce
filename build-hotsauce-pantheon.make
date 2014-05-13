@@ -16,8 +16,6 @@ projects[drupal][download][url] = git://github.com/pantheon-systems/drops-7.git
 projects[drupal][download][branch] = master
 projects[drupal][patch][1334818] = https://drupal.org/files/issues/D7-install-profile-ajax-1334818-8.patch
 
-includes[] = drupal-org-dev.make
-
 ; HotSauce
 
 projects[hotsauce][type] = profile
