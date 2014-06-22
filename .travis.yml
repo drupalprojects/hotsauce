@@ -9,7 +9,7 @@ mysql:
   encoding: utf8
 
 env:
-  - UPGRADE=7.x-1.x
+  - UPGRADE=7.x-1.x-dev
 
 matrix:
   fast_finish: true
@@ -30,10 +30,9 @@ install:
   - drush cc drush
 
   # Build Codebase
-  - mkdir profiles
   - cd ../
+  - mkdir profiles
   - mv hotsauce profiles/
-  - cd profiles
   - mkdir drupal
   - mv profiles drupal/
 
