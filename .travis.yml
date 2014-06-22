@@ -30,14 +30,14 @@ install:
   - drush cc drush
 
   # Build Codebase
-  - mkdir profiles
-  - mkdir hotsauce
-  - mv hotsauce profiles/
   - mkdir drupal
-  - mv profiles drupal/
+  - cd drupal
+  - mkdir profiles
+  - cd profiles
+  - mkdir hotsauce
+  - cd ../
 
   # Build the current branch.
-  - cd drupal
   - drush make --yes profiles/hotsauce/drupal-org-core.make --prepare-install
   - drush make --yes profiles/hotsauce/drupal-org.make --no-core --contrib-destination=profiles/hotsauce
   - drush dl diff
