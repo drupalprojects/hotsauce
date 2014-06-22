@@ -29,17 +29,19 @@ install:
   - drush dl -y drupalorg_drush-7.x-1.x-dev --destination=$HOME/.drush
   - drush cc drush
 
+  # Build Behat dependencies
+  - cd ./tests/behat
+  - composer install --prefer-source --no-interaction
+  - cd ../../../
+
   # Build Codebase
-  - mkdir drupal
-  - cd drupal
   - mkdir profiles
-  - cd profiles
-  - mkdir hotsauce
-  - cd ../
-  - pwd
-  - ls -l
+  - mv hotsauce profiles/
+  - mkdir drupal
+  - mv profiles drupal/
 
   # Build the current branch.
+  - cd drupal
   - drush make --yes profiles/hotsauce/drupal-org-core.make --prepare-install
   - drush make --yes profiles/hotsauce/drupal-org.make --no-core --contrib-destination=profiles/hotsauce
   - drush dl diff
