@@ -36,6 +36,8 @@ install:
   - cd profiles
   - mkdir hotsauce
   - cd ../
+  - pwd
+  - ls -l
 
   # Build the current branch.
   - drush make --yes profiles/hotsauce/drupal-org-core.make --prepare-install
