@@ -9,7 +9,6 @@ mysql:
   encoding: utf8
 
 env:
-  - UPGRADE=none
   - UPGRADE=7.x-1.x-dev
 
 matrix:
@@ -29,11 +28,6 @@ install:
   - composer global require --prefer-source --no-interaction drush/drush:6.*
   - drush dl -y drupalorg_drush-7.x-1.x-dev --destination=$HOME/.drush
   - drush cc drush
-
-  # Build Behat dependencies
-  - cd ./tests/behat
-  - composer install --prefer-source --no-interaction
-  - cd ../../../
 
   # Build Codebase
   - mkdir profiles
@@ -85,7 +79,7 @@ install:
   - wget http://selenium-release.storage.googleapis.com/2.41/selenium-server-standalone-2.41.0.jar
   - java -jar selenium-server-standalone-2.41.0.jar -Dwebdriver.chrome.driver=`pwd`/chromedriver > /dev/null 2>&1 &
   - sleep 5
-  
+
   # Disable sendmail
   - echo sendmail_path=`which true` >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
 
