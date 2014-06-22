@@ -31,6 +31,7 @@ install:
 
   # Build Codebase
   - mkdir profiles
+  - mkdir hotsauce
   - mv hotsauce profiles/
   - mkdir drupal
   - mv profiles drupal/
