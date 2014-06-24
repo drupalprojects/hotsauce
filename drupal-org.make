@@ -4,70 +4,46 @@ core = 7.x
 
 ; Kalatheme
 
-projects[kalatheme][version] = 3.x-dev
 projects[kalatheme][type] = theme
 projects[kalatheme][download][type] = git
+projects[kalatheme][download][revision] = ee3f1e3
 projects[kalatheme][download][branch] = 7.x-3.x
+projects[kalatheme][download][url] = http://git.drupal.org/project/kalatheme.git
 
-; HotSauce Inheritance !
+; Panopoly
 
-; Someday maybe we can turn this on to just inherit hot
-;projects[hotsauce][type] = profile
-;projects[hotsauce][version] = 7.x-1.x-dev
+; Someday maybe we can turn this on to just inherit Panopoly
+;projects[panopoly][type] = profile
+;projects[panopoly][version] = 7.x-1.2
 ; but, Drupal.org does not support recursive profiles
 ; and also does not support include[]
-; so we need to copy the hotsauce.make file here
+; so we need to copy the panopoly.make file here
 
-; The HotSauce!
+; The Panopoly Foundation
 
-projects[hot_core][version] = 1.x-dev
-projects[hot_core][subdir] = hotsauce
-projects[hot_core][download][type] = git
-projects[hot_core][download][branch] = 7.x-1.x
+projects[panopoly_core][version] = 1.2
+projects[panopoly_core][subdir] = panopoly
 
-projects[hot_pics][version] = 1.x-dev
-projects[hot_pics][subdir] = hotsauce
-projects[hot_pics][download][type] = git
-projects[hot_pics][download][branch] = 7.x-1.x
+; Other Panopoly Magix
 
-projects[hot_theme][version] = 1.x-dev
-projects[hot_theme][subdir] = hotsauce
-projects[hot_theme][download][type] = git
-projects[hot_theme][download][branch] = 7.x-1.x
+projects[panopoly_images][version] = 1.2
+projects[panopoly_images][subdir] = panopoly
+projects[panopoly_theme][version] = 1.2
+projects[panopoly_theme][subdir] = panopoly
+projects[panopoly_magic][version] = 1.2
+projects[panopoly_magic][subdir] = panopoly
+projects[panopoly_widgets][version] = 1.2
+projects[panopoly_widgets][subdir] = panopoly
+projects[panopoly_admin][version] = 1.2
+projects[panopoly_admin][subdir] = panopoly
+projects[panopoly_users][version] = 1.2
+projects[panopoly_users][subdir] = panopoly
 
-projects[hot_magic][version] = 1.x-dev
-projects[hot_magic][subdir] = hotsauce
-projects[hot_magic][download][type] = git
-projects[hot_magic][download][branch] = 7.x-1.x
+; The Panopoly Toolset
 
-projects[hot_widgets][version] = 1.x-dev
-projects[hot_widgets][subdir] = hotsauce
-projects[hot_widgets][download][type] = git
-projects[hot_widgets][download][branch] = 7.x-1.x
-
-projects[hot_admin][version] = 1.x-dev
-projects[hot_admin][subdir] = hotsauce
-projects[hot_admin][download][type] = git
-projects[hot_admin][download][branch] = 7.x-1.x
-
-projects[hot_users][version] = 1.x-dev
-projects[hot_users][subdir] = hotsauce
-projects[hot_users][download][type] = git
-projects[hot_users][download][branch] = 7.x-1.x
-
-; The HotSauce! Toolset
-
-projects[hot_pages][version] = 1.x-dev
-projects[hot_pages][subdir] = hotsauce
-projects[hot_pages][download][type] = git
-projects[hot_pages][download][branch] = 7.x-1.x
-
-projects[hot_wysiwyg][version] = 1.x-dev
-projects[hot_wysiwyg][subdir] = hotsauce
-projects[hot_wysiwyg][download][type] = git
-projects[hot_wysiwyg][download][branch] = 7.x-1.x
-
-projects[hot_search][version] = 1.x-dev
-projects[hot_search][subdir] = hotsauce
-projects[hot_search][download][type] = git
-projects[hot_search][download][branch] = 7.x-1.x
+projects[panopoly_pages][version] = 1.2
+projects[panopoly_pages][subdir] = panopoly
+projects[panopoly_wysiwyg][version] = 1.2
+projects[panopoly_wysiwyg][subdir] = panopoly
+projects[panopoly_search][version] = 1.2
+projects[panopoly_search][subdir] = panopoly

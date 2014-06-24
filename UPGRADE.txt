@@ -8,7 +8,7 @@ Here are instructions on how to upgrade:
    these instructions for more information: http://drupal.org/node/1223018
 
  * Backup your database and run update.php *TWICE* on your site. This may
-   perform several database updates for HotSauce! and its bundled apps and
+   perform several database updates for Panopoly and its bundled apps and
    modules.
 
  * Navigate to the admin screen for Features (admin/structure/features) and
