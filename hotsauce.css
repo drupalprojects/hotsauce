@@ -29,11 +29,11 @@ body.maintenance-page #logo {
 }
 
 body.in-maintenance #page {
-  width: 970px; 
+  width: 970px !important; 
 }
 
 body.in-maintenance #content { 
-  width: 700px; 
+  width: 700px !important; 
 }
 
 body.in-maintenance #content #kalapreview-image-load-image img { 
