@@ -27,3 +27,7 @@ body.maintenance-page #logo {
   padding-top: 220px; /* height of logo  */
   width: 180px; /* width of logo  */
 }
+
+body.in-maintenance #content #kalapreview-image-load-image img { 
+  width:90%; 
+}
