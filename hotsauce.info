@@ -31,6 +31,20 @@ dependencies[] = file
 dependencies[] = dblog
 dependencies[] = update
 
+; HotSauce! Additions
+dependencies[] = better_formats
+dependencies[] = diff
+dependencies[] = pathologic
+dependencies[] = transliteration
+dependencies[] = imagecache_token
+dependencies[] = imagefield_tokens
+dependencies[] = filefield_paths
+dependencies[] = entitycache
+dependencies[] = views_cache_bully
+dependencies[] = picture
+dependencies[] = speedy
+dependencies[] = icon
+
 ; Panopoly Foundation
 dependencies[] = panopoly_core
 dependencies[] = panopoly_images

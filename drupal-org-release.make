@@ -10,6 +10,25 @@ projects[kalatheme][download][revision] = 86c1705
 projects[kalatheme][download][branch] = 7.x-3.x
 projects[kalatheme][download][url] = http://git.drupal.org/project/kalatheme.git
 
+; Hotsauce
+
+; HotSauce Core Contrib Modules
+; For release build, we should grab the most stable module versions
+; that we know work with HotSauce and its apps.
+
+projects[better_formats][subdir] = "contrib"
+projects[diff][subdir] = "contrib"
+projects[pathologic][subdir] = contrib
+projects[transliteration][subdir] = contrib
+projects[imagecache_token][subdir] = contrib
+projects[imagefield_tokens][subdir] = contrib
+projects[filefield_paths][subdir] = contrib
+projects[entitycache][subdir] = contrib
+projects[views_cache_bully][subdir] = contrib
+projects[picture][subdir] = contrib
+projects[speedy][subdir] = contrib
+projects[icon][subdir] = contrib
+
 ; Panopoly
 
 ; Someday maybe we can turn this on to just inherit Panopoly
