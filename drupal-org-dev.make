@@ -9,6 +9,25 @@ projects[kalatheme][version] = 3.x-dev
 projects[kalatheme][download][type] = git
 projects[kalatheme][download][branch] = 7.x-3.x
 
+; Hotsauce
+
+; HotSauce Core Contrib Modules
+; For dev build, we're grabbing the most recent module version,
+; but should override any modules we want to experiment with.
+
+projects[better_formats][subdir] = "contrib"
+projects[diff][subdir] = "contrib"
+projects[pathologic][subdir] = contrib
+projects[transliteration][subdir] = contrib
+projects[imagecache_token][subdir] = contrib
+projects[imagefield_tokens][subdir] = contrib
+projects[filefield_paths][subdir] = contrib
+projects[entitycache][subdir] = contrib
+projects[views_cache_bully][subdir] = contrib
+projects[picture][subdir] = contrib
+projects[speedy][subdir] = contrib
+projects[icon][subdir] = contrib
+
 ; Panopoly
 
 ; Someday maybe we can turn this on to just inherit Panopoly
