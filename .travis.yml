@@ -9,7 +9,10 @@ mysql:
   encoding: utf8
 
 env:
-  - UPGRADE=7.x-1.x-dev
+  matrix:
+    - UPGRADE=7.x-1.x-dev
+  global:
+    secure: Jc9tSi/yf5qy1Bz0NipXxixXFYMgksorzHReDLGoeSRGG/5aCO2Py1/SQko6Y6YzR0fvuByWXFM8T8Ob0+soeC26CnLygARm50h4Px5vv9iW0RUd0jkmMqMz67fIrAOptfp1lbHe2m9Xe91XhBDTcF6HhdXXKc71y5WsRAawoPA=
 
 matrix:
   fast_finish: true
@@ -85,6 +88,9 @@ install:
   - echo sendmail_path=`which true` >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
 
 before_script:
+  # Configure GIT
+  - git config --global user.email "travis@kalamuna.com"
+  - git config --global user.name "Travis-CI"
 
   # Do the site install
   - cd drupal
@@ -101,6 +107,16 @@ after_script:
 
   # Stop the webserver so that it's not still running when MySQL is stopped.
   - kill $SERVER_PID
+
+after_success:
+  - git config credential.helper "store --file=.git/credentials"
+  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+  - git clone https://github.com/kala-travis/hotsauce-drops-7.git hotdrops
+  - cp -fR drupal hotdrops
+  - cd hotdrops
+  - git add .
+  - git commit -m "Successful build"
+  - git push
 
 notifications:
   email:
