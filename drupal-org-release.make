@@ -27,6 +27,7 @@ projects[entitycache][subdir] = contrib
 projects[views_cache_bully][subdir] = contrib
 projects[picture][subdir] = contrib
 projects[speedy][subdir] = contrib
+projects[icon][version] = 1.x-dev
 projects[icon][subdir] = contrib
 
 ; Panopoly
