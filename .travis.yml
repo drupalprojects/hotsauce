@@ -106,6 +106,10 @@ before_script:
   - SERVER_PID=$!
   - sleep 3
 
+script:
+  # Just don't run the default PhpUnit tests
+  - cat /dev/null
+
 after_script:
 
   # Stop the webserver so that it's not still running when MySQL is stopped.
