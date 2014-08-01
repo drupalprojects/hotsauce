@@ -93,8 +93,7 @@ before_script:
   - git config --global user.name "Travis-CI"
 
   # Expand max_nesting_level to prevent error
-  - export ADDITIONAL_PATH=`php -i | grep -F --color=never 'Scan this dir for additional .ini files'`
-  - echo 'xdebug.max_nesting_level=9999' | sudo tee ${ADDITIONAL_PATH:42}/drupal.ini
+  - phpenv config-add drupal/profiles/hotsauce/travis.php.ini
 
   # Do the site install
   - cd drupal
