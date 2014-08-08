@@ -8,7 +8,8 @@ CONTENTS OF THIS FILE
 INTRODUCTION
 ------------
 
-Current Maintainers: Mike Pirog <mike@getpantheon.com>
+Current Maintainers: Mike Pirog <mike@kalamuna.com>
+                     Alec Reynolds <alec@kalamuna.com>
 
 
 HotSauce! is powerful sub distrbution of Panopoly which aims to empower users
