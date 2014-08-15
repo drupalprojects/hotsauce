@@ -10,6 +10,12 @@ projects[kalatheme][download][revision] = 86c1705
 projects[kalatheme][download][branch] = 7.x-3.x
 projects[kalatheme][download][url] = http://git.drupal.org/project/kalatheme.git
 
+projects[kalatheme_power][type] = module
+projects[kalatheme_power][subdir] = "hot_stuff"
+projects[kalatheme_power][download][type] = git
+projects[kalatheme_power][download][branch] = "7.x-1.x"
+projects[kalatheme_power][download][url] = http://git.drupal.org/sandbox/pirog/2314393.git
+
 ; Hotsauce
 
 ; HotSauce Core Contrib Modules
