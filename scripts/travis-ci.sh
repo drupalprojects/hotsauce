@@ -164,8 +164,14 @@ after_tests() {
   kill $WEB_SERVER_PID
   kill $SELENIUM_SERVER_PID
 
-  # If we have a tag then commit and push it to hotdrops
-  if [ ! -z $TRAVIS_TAG ]; then
+  # Build, commit and push to hotsauce-drops-7 only if we have a tag, we are
+  # on the main branch, it's not a build for the pull request, and it's done
+  # directly from the main project repo and not from a fork
+  if [ ! -z $TRAVIS_TAG ] &&
+     [ $TRAVIS_BRANCH -eq "7.x-1.x" ] &&
+     [ $TRAVIS_PULL_REQUEST -eq "false" ] &&
+     [ $TRAVIS_REPO_SLUG -eq "drupalprojects/hotsauce" ]; then
+
     header Commiting and pushing changes from tag $TAG to kala-travis fork of hotsauce-drops-7
     # Configure GIT
     git config --global user.email "travis@kalamuna.com"
@@ -182,6 +188,7 @@ after_tests() {
     git add --all
     git commit -m "Changes from hotsauce tag [${TRAVIS_TAG}]"
     git push
+
   fi
 
 }
