@@ -36,5 +36,3 @@ HotSauce is:
  * Apps Powered - HotSauce can be extended through various apps and plugins
    delivered by the Kalamuna App server.
 
-#### UPGRADE
-If you had Hotsuace that used the old fork distro and not the Panopoly based Hotsuace, please see https://github.com/labboy0276/citc_upgrade for instructions on possibly migrating the profile.
