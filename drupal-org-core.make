@@ -7,5 +7,3 @@ projects[drupal][version] = 7.32
 
 ; Drupal Core Patches
 projects[drupal][patch][1334818] = https://drupal.org/files/issues/D7-install-profile-ajax-1334818-8.patch
-
-
