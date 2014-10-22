@@ -12,8 +12,8 @@ Current Maintainers: Mike Pirog <mike@kalamuna.com>
                      Alec Reynolds <alec@kalamuna.com>
 
 
-HotSauce! is powerful sub distrbution of Panopoly which aims to empower users
-with an intuitice content authoring interface, easy and out of the box
+HotSauce! is powerful sub distribution of Panopoly which aims to empower users
+with an intuitive content authoring interface, easy and out of the box
 theming options and an array of apps and plugins to select on installation.
 HotSauce is:
 
