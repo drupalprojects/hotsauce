@@ -16,9 +16,9 @@ function hotsauce_install_tasks($install_state) {
   // Add our custom CSS file for the installation process
   drupal_add_css(drupal_get_path('profile', 'hotsauce') . '/hotsauce.css');
 
-  // @todo: Switch to Kalamuna App server
-  require_once(drupal_get_path('module', 'apps') . '/apps.profile.inc');
-  $tasks = $tasks + apps_profile_install_tasks($install_state, array('machine name' => 'hotapps', 'default apps' => array()));
+  // @todo: Either switch to Kalamuna App server or remove Apps completely
+  // require_once(drupal_get_path('module', 'apps') . '/apps.profile.inc');
+  // $tasks = $tasks + apps_profile_install_tasks($install_state, array('machine name' => 'hotapps', 'default apps' => array()));
 
   // Add subtheme generator to installation workflow
   $tasks['hotsauce_theme_configure_form'] = array(

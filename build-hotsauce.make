@@ -17,4 +17,3 @@ includes[] = drupal-org-core.make
 projects[hotsauce][type] = profile
 projects[hotsauce][download][type] = git
 projects[hotsauce][download][branch] = 7.x-1.x
-

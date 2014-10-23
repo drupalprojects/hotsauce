@@ -8,11 +8,12 @@ CONTENTS OF THIS FILE
 INTRODUCTION
 ------------
 
-Current Maintainers: Mike Pirog <mike@getpantheon.com>
+Current Maintainers: Mike Pirog <mike@kalamuna.com>
+                     Alec Reynolds <alec@kalamuna.com>
 
 
-HotSauce! is powerful sub distrbution of Panopoly which aims to empower users
-with an intuitice content authoring interface, easy and out of the box
+HotSauce! is powerful sub distribution of Panopoly which aims to empower users
+with an intuitive content authoring interface, easy and out of the box
 theming options and an array of apps and plugins to select on installation.
 HotSauce is:
 
@@ -35,5 +36,3 @@ HotSauce is:
  * Apps Powered - HotSauce can be extended through various apps and plugins
    delivered by the Kalamuna App server.
 
-#### UPGRADE
-If you had Hotsuace that used the old fork distro and not the Panopoly based Hotsuace, please see https://github.com/labboy0276/citc_upgrade for instructions on possibly migrating the profile.
